@@ -7,7 +7,7 @@
 
   --fuente-principal: 3.8rem;
 }
-
+/* Tipografia Principal */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -19,6 +19,7 @@ body {
   font-size: 16px; /* 1rem = 10 px */
   font-family: "Inconsolata", monospace;
   font-family: "Kanit", sans-serif;
+  background-image: linear-gradient(to top, #e9dff3 0%, var(--blanco) 100% );
 }
 h1 {
   font-size: 5rem;
@@ -35,7 +36,7 @@ h3 {
 h1,h2,h3 {
   text-align: center;
 }
-
+/* Navegacion Principal */
 .nav-principal {
     padding: 1rem;
     display: flex;
@@ -89,13 +90,14 @@ h1,h2,h3 {
 @media (min-width: 480px) {
     
 }
-
+/* Imagen Masaje */
 .masaje {
   background-image: url(../masaje3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
   position: relative;
+  margin-bottom: 2rem;
   
 }
 .contenido-masaje {
@@ -115,4 +117,67 @@ h1,h2,h3 {
 }
 .boton-gmail {
   flex-direction: column;
+}
+/* SOMBRA */ 
+.sombra {
+  -webkit-box-shadow: -65px 24px 47px 4px rgba(27,19,143,0.65);
+  -moz-box-shadow: -65px 24px 47px 4px rgba(27,19,143,0.65);
+   box-shadow: -65px 24px 47px 4px rgba(27,19,143,0.65);
+   background-color: var(--blanco);
+   padding: 2rem;
+   border-radius: 84px 84px 84px 84px;
+-moz-border-radius: 84px 84px 84px 84px;
+-webkit-border-radius: 84px 84px 84px 84px;
+border: 0px solid #000000;
+}
+.contenedor h2 {
+color: rgb(22, 4, 73)
+}
+/* Redes */
+.Redes {
+  display: grid;
+  grid-template-columns: 1fr  1fr 1fr;
+  column-gap: 4rem;
+  
+}
+.Red {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.Red p {
+  line-height: 2;
+}
+.Red h3 {
+color: var(--secundario);
+}
+.Red .iconos {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgb(217, 240, 12);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* formulario */
+.formulario {
+background-color: grey;
+width: min( 60rem, 100%);
+margin: auto;
+padding: 2rem;
+border-radius: 1rem;
+
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario legend {
+text-align: center;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom: 2rem;
+color: var(--primario);
 }
